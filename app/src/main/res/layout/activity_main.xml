@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--ast_scroll_factor 控制滑动快慢 数值越大越慢-->
+    <com.blin.haililibrary.AutoScrollTextView
+        android:id="@+id/tv_robot_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_voice_right"
+        android:ellipsize="end"
+        android:maxWidth="600dp"
+        android:maxHeight="220dp"
+        android:maxLines="6"
+        android:minWidth="60dp"
+        android:minHeight="60dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="40dp"
+        android:paddingRight="36dp"
+        android:paddingBottom="40dp"
+        android:textColor="#ff333333"
+        android:textSize="32sp"
+        stl:ast_scroll_factor="90"
+        android:text="您可以对我说:“ 发士大夫士大夫十分" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:onClick="resetText"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="resetText"></androidx.appcompat.widget.AppCompatButton>
+</RelativeLayout>
